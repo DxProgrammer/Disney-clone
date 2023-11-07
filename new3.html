@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="nbtn">+</button>
+    <div id="num"></div>
+    <button id="pbtn">-</button>
+    <script>
+        const pbtn=document.getElementById("pbtn")
+        const nbtn=document.getElementById("nbtn")
+        const num=document.getElementById("num")
+        var no=0
+        pbtn.addEventListener('click',function(){
+            no--
+            num.innerHTML=no
+            
+        })
+        nbtn.addEventListener('click',function(){
+            no++
+            num.innerHTML=no
+            
+        })
+    </script>
+
+</body>
+</html>
